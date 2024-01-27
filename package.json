@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "description": "Feature complete file browser for Vite/Vue + Express",
   "type": "module",
+  "keywords": [
+    "vue",
+    "files",
+    "express"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
