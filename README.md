@@ -10,6 +10,8 @@ Backend
 -------
 Import the Express injectable into your ExpressJS project:
 
+See [src/files.js](./src/files.js) for a full list of.
+
 ```javascript
 import FileBrowser from '@momsfriendlydevco/vue-file-browser/backend';
 
@@ -33,6 +35,8 @@ FileBrowser({
 Frontend
 --------
 Include the Vue component in your frontend wrapper code:
+
+See [src/files.vue](./src/files.vue) for a full list of.
 
 ```vue
 <script>

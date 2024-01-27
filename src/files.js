@@ -37,6 +37,9 @@ const constrainPath = function(root, path) {
 * @param {String} options.thumbs Absolute path to load thumbnails from (or generate new thumbnails if enabled)
 * @param {String|Array<String>} [options.glob] Glob of files to show, defaults to all image files
 * @param {String} [options.meta='.gander.json'] Additional file to store file meta data, must be included in the `options.glob` expression
+* @param {String} [options.pathPrefix='/api/files'] Mount prefix for the Express backend
+* @param {Function} [options.pathThumb] Function to compute the frontend path to access a thumbnail. Called as `(file:String)` where file is the relative path
+* @param {Function} [options.pathThumbDir] Function to compute the frontend path to access a directory thumbnail. Called as `(file:String)` where file is the relative path
 */
 export default function (options) {
 	let settings = {
