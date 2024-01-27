@@ -95,18 +95,18 @@ export default {
 		*/
 		sortDirsFirst: true,
 	}},
-	computed: {
-		displayFiles() {
-			return this.files
-				.filter(file => !this.filters.stars || file.type.star)
-		},
-	},
 	props: {
 		endpoints: {
 			type: Object,
 			default: ()=> ({
 				list: '/api/files',
 			}),
+		},
+	},
+	computed: {
+		displayFiles() {
+			return this.files
+				.filter(file => !this.filters.stars || file.type.star)
 		},
 	},
 	methods: {

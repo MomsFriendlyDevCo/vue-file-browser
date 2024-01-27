@@ -48,7 +48,7 @@ export default function (options) {
 		meta: '.gander.json',
 		pathPrefix: '/api/files',
 		pathThumb: file => `/api/files/${file}/thumb`,
-		pathThumbDir: file => '/api/files/-dir/thumb',
+		pathThumbDir: file => '/api/files/-dir/thumb', // eslint-disable-line
 		...options,
 	};
 

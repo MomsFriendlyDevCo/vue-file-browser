@@ -5,10 +5,10 @@ import FilesTreeSegment from './files-tree-segment.vue';
 * File tree display area
 */
 export default {
-	inject: ['filesCore'],
 	components: {
 		FilesTreeSegment,
 	},
+	inject: ['filesCore'],
 	methods: {
 		/**
 		* Move around the tree by a relative method
