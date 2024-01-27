@@ -30,19 +30,21 @@
   "license": "PRIVATE",
   "dependencies": {
     "@momsfriendlydevco/es6": "^1.3.2",
-    "express": "^4.18.2",
     "globby": "^14.0.0",
     "lodash-es": "^4.17.21",
     "micromatch": "^4.0.5"
+  },
+  "devDependencies": {
+    "@momsfriendlydevco/eslint-config": "^1.0.9",
+    "eslint": "^8.56.0"
+  },
+  "optionalDependencies": {
+    "express": "^4.18.2"
   },
   "eslintConfig": {
     "extends": "@momsfriendlydevco",
     "parserOptions": {
       "ecmaVersion": "latest"
     }
-  },
-  "devDependencies": {
-    "@momsfriendlydevco/eslint-config": "^1.0.9",
-    "eslint": "^8.56.0"
   }
 }
